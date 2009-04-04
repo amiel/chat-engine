@@ -1,0 +1,19 @@
+
+<div id="chat">
+	<div id="users">
+		<span id="user_count">Users (<span><%= @users.size %></span>)</span>
+		<ul>
+		<% @users.each do |user| %>
+			<li><%= user %></li>
+		<% end %>
+		</ul>
+		<div id="leave_room">
+			<%= link_to_function 'Leave Chat', 'Chat.instance.leave_room(true)' %>
+		</div>				
+	</div>
+	<ul id="messages">
+	</ul>
+	<div id="entry">
+		<%= render :partial => 'chats/message_entry.html.erb' %>
+	</div>
+</div>

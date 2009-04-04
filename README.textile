@@ -9,6 +9,6 @@ h2. Features
 * Lines in the chat that mention a users nickname are highlighted.
 * Inactivity timer will logout users from the client side.
 * rake task to logout users whose browsers do not allow ajax requests in the unload event.
-
+* The ability to mute specific users (from script/console). Muted users will see their own messages, but no one else will.
 
 h2. Installation
