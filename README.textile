@@ -1,0 +1,14 @@
+h1. Chat Engine
+
+Chat Engine is a lightweight rails engine that heavily uses jQuery and memcached to implement a very simple group chat room.
+
+h2. Features
+
+* You must enter a nickname to be part of the chat room.
+* All logged in users are shown in the user list
+* Lines in the chat that mention a users nickname are highlighted.
+* Inactivity timer will logout users from the client side.
+* rake task to logout users whose browsers do not allow ajax requests in the unload event.
+
+
+h2. Installation
