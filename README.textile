@@ -18,6 +18,8 @@ h2. Features
 h2. Usage
 
 Be sure to add the chat.js javascript
+Also requires jquery.
+
 
 h2. History
 
