@@ -2,6 +2,10 @@ h1. Chat Engine
 
 Chat Engine is a lightweight rails engine that heavily uses jQuery and memcached to implement a very simple group chat room.
 
+h2. Status
+
+
+
 h2. Features
 
 * You must enter a nickname to be part of the chat room.
@@ -11,4 +15,10 @@ h2. Features
 * rake task to logout users whose browsers do not allow ajax requests in the unload event.
 * The ability to mute specific users (from script/console). Muted users will see their own messages, but no one else will.
 
-h2. Installation
+h2. Usage
+
+Be sure to add the chat.js javascript
+
+h2. History
+
+This chat was originally written for Tatango.TV (http//tatango.tv).
