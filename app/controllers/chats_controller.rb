@@ -1,5 +1,6 @@
 class ChatsController < ApplicationController
   before_filter :check_reserved_nick, :only => :create
+  layout :none
   
   def show
     @messages = Chat.new(h(params[:id])).get_messages
