@@ -62,6 +62,14 @@ jQuery.extend(Chat, {
 		return false;
 	},
 
+	// this is here for convenience
+	externalize_links: function(selector) {
+		$(selector || document).find("a[rel=external]").click(function(){
+			window.open(this.href);
+			return false;
+		}).attr("rel", "externalized");
+	},
+
 	show_activity: function(selector){
 		$(selector).addClass('loading');
 	},
@@ -96,7 +104,7 @@ jQuery.extend(Chat, {
 				
 				if (e.nick == current_nick) message.addClass('me');
 				if (me_re.test(e.content)) message.addClass('mentioned');
-				this.externalize_links(message);
+				Chat.externalize_links(message);
 				
 				$('#chat #messages').append(message);
 			});
@@ -104,14 +112,7 @@ jQuery.extend(Chat, {
 			this.limit_history();
 		},
 		
-		
-		externalize_links: function(selector) {
-			$(selector || document).find("a[rel=external]").click(function(){
-				window.open(this.href);
-				return false;
-			}).attr("rel", "externalized");
-		},
-		
+
 		check_user_list: function(hash){
 			if (this.user_list_hash != hash) this.get_new_user_list();
 		},
