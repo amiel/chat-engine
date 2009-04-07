@@ -1,6 +1,6 @@
 class ChatsController < ApplicationController
   before_filter :check_reserved_nick, :only => :create
-  layout nil
+  layout false
   
   def show
     @messages = Chat.new(h(params[:id])).get_messages
@@ -27,7 +27,7 @@ class ChatsController < ApplicationController
     
     respond_to do |format|
       format.js
-      format.html { render_javascript_error }
+      # format.html { render_javascript_error }
     end
   end
   
