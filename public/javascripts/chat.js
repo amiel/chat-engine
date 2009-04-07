@@ -3,7 +3,7 @@
  * Amiel Martin
  * 2009-02-26
  *
- * requires: jquery.js, auto_scroll.js, and externalize_links function (from application.js)
+ * requires: jquery.js, auto_scroll.js
  */
 
 
@@ -96,12 +96,20 @@ jQuery.extend(Chat, {
 				
 				if (e.nick == current_nick) message.addClass('me');
 				if (me_re.test(e.content)) message.addClass('mentioned');
-				externalize_links(message);
+				this.externalize_links(message);
 				
 				$('#chat #messages').append(message);
 			});
 			this.auto_scroll.after_update();
 			this.limit_history();
+		},
+		
+		
+		externalize_links: function(selector) {
+			$(selector || document).find("a[rel=external]").click(function(){
+				window.open(this.href);
+				return false;
+			}).attr("rel", "externalized");
 		},
 		
 		check_user_list: function(hash){
