@@ -1,5 +1,5 @@
 <div id="chat_overlay">
-	<p id="choose_nickname">Please choose a nickname to enter TatangoTV chat.</p>
+	<p id="choose_nickname">Please choose a nickname to enter this chat.</p>
 	<p style="display:none;" id="inactivity_notice">You have been logged out of chat due to inactivity.</p>
 	<% form_tag chats_path(:format => :js), :method => :post, :id => 'nick_form' do %>
 		<input type="text" id="nick" name="chat_nick" value="<%= session[:chat_nick] %>" />
