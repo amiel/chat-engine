@@ -55,7 +55,7 @@ jQuery.extend(Chat, {
 			data: $.param($form.serializeArray()),
 			dataType: 'script',
 			type: $form.find('[name=_method]').val() || $form.attr('method'),
-			url: $form.attr('action') + '.js'
+			url: $form.attr('action')
 		});
 
 		var request = $.ajax(ajax_options);
