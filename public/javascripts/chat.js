@@ -3,7 +3,7 @@
  * Amiel Martin
  * 2009-02-26
  *
- * requires: jquery.js, auto_scroll.js, and externalize_links
+ * requires: jquery.js, auto_scroll.js, and externalize_links function (from application.js)
  */
 
 
@@ -55,7 +55,7 @@ jQuery.extend(Chat, {
 			data: $.param($form.serializeArray()),
 			dataType: 'script',
 			type: $form.find('[name=_method]').val() || $form.attr('method'),
-			url: $form.attr('action')
+			url: $form.attr('action') + '.js'
 		});
 
 		var request = $.ajax(ajax_options);
