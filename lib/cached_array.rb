@@ -8,7 +8,8 @@ class CachedArray
   end
   
   def push(data)
-    @cache.write(@key, @data + [data] )
+    @data = @data + [data]
+    write
   end
   
   def clear
@@ -17,9 +18,8 @@ class CachedArray
   end
   
   def delete(data)
-    @data.delete(data)
-    @cache.write(@key, @data)
-  end
+    @data = @data - [data]
+write  end
   
   def to_a
     @data.dup
@@ -36,6 +36,11 @@ class CachedArray
     @data.each do |d|
       yield d
     end
+  end
+  
+  private
+  def write
+    @cache.write @key, @data
   end
 end
 
