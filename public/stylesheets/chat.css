@@ -1,3 +1,5 @@
+
+
 #chat{ margin: 10px 10px 0px 10px; border: 1px solid #222; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: 418px; }
 
 #messages{ width: 286px; float: left; height: 252px; overflow-y: auto; overflow-x: hidden; border-right: 1px solid #444; padding: 10px; border-bottom: 1px solid #444; }
@@ -19,10 +21,10 @@
 		#entry #send{ width: 60px; height: 26px; display: block; float: right; border: none; background: no-repeat center center url(/images/send.png); }
 		
 
-#message.loading{ background: #1a1a1a url('/images/activity.gif') no-repeat 306px center; }
-#nick.loading{ background: #1a1a1a url('/images/activity.gif') no-repeat 220px center; }
+#message.loading{ background: none url('/images/chat/indicator.white.gif') no-repeat 306px center; }
+#nick.loading{ background: none url('/images/chat/indicator.white.gif') no-repeat 220px center; }
 
-#chat_overlay{ margin: 10px; border: 1px solid #222; background: no-repeat bottom center url(/images/chat_bg.jpg); -webkit-border-radius: 3px; -moz-border-radius: 3px; height: 320px; }
+#chat_overlay{ margin: 10px; border: 1px solid #222; background: no-repeat bottom center url(/images/chat/chat_bg.jpg); -webkit-border-radius: 3px; -moz-border-radius: 3px; height: 320px; }
 	#chat_overlay p{ font-size: .85em; color: #999; padding: 120px 20px 10px; }
 	#chat_overlay form{ padding: 0; }
 	#chat_overlay p#nick_errors{ clear: both; padding: 20px; color: #D14414; font-weight: bold; }
@@ -37,4 +39,4 @@
 		
 		
 #user_count{ display: block; margin-bottom: 10px; font-weight: bold; text-align: center;  }
-.office_user{ font-weight: bold; }
+/*.office_user{ font-weight: bold; }*/
