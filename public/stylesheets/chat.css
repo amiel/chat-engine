@@ -16,7 +16,7 @@
 	#users li{ list-style-type: none; padding-bottom: 3px; width: 90px; }
 	
 #entry{ clear: both; border-top: 1px solid #222; padding: 10px; background: #0e0e0e; height: 26px; }
-	#entry input, #chat_overlay input{ border: 1px solid #666; background: #1a1a1a; color: #fff;  -webkit-border-radius: 3px; -moz-border-radius: 3px; }	
+	#entry input, #chat_overlay input{ border: 1px solid #666; background: none; color: #0e0e0e;  -webkit-border-radius: 3px; -moz-border-radius: 3px; }
 		#entry #message{ width: 320px; padding: 4px; height: 16px; display: block; float: left; vertical-align: center; }
 		#entry #send{ width: 60px; height: 26px; display: block; float: right; border: none; background: no-repeat center center url(/images/send.png); }
 		
