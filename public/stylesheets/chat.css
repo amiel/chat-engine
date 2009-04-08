@@ -1,19 +1,19 @@
 
 
-#chat{ margin: 10px 10px 0px 10px; border: 1px solid #222; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: 418px; }
+#chat{ margin: 10px 10px 0px 10px; border: 1px solid #222; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: 425px; }
 
-#messages{ width: 286px; float: left; height: 252px; overflow-y: auto; overflow-x: hidden; border-right: 1px solid #444; padding: 10px; border-bottom: 1px solid #444; }
-	#messages li{ padding: 5px; font-size: .75em; border-top: 1px solid #111; }
+#messages{ width: 300px; float: left; height: 240px; overflow-y: auto; overflow-x: hidden; list-style-type: none; padding-left: 0; }
+	#messages li{ padding: 5px; font-size: .75em; border-top: 1px solid #eee;  }
 		#messages li .user{ font-weight: bold; display: inline; color: #666; padding-right: 5px; }
 		#messages li .message{ display: inline; line-height: 120%; }
 		
 		#messages li.me .user{ color: #999; }
-		#messages li.mentioned{ background-color: #222; }
+		#messages li.mentioned{ background-color: #ccc; }
 
 
-#users{ float: right; width: 90px; font-size: .7em; height: 252px; border-left: 1px solid #222; padding: 10px; overflow-y: scroll; overflow-x: hidden; background: none; border-bottom: 1px solid #444; }
-	#users ul{ list-style-type: none; width: 90px; }
-	#users li{ list-style-type: none; padding-bottom: 3px; width: 90px; }
+#users{ float: right; width: 100px; font-size: .7em; height: 252px; padding: 10px; overflow-y: scroll; overflow-x: hidden; border-left: 1px solid #222; }
+	#users ul{ list-style-type: none; width: 100px; padding-left: 0; }
+	#users li{ list-style-type: none; padding-bottom: 3px; width: 100px; }
 	
 #entry{ clear: both; border-top: 1px solid #222; padding: 10px; background: none; height: 26px; }
 	#entry input, #chat_overlay input{ border: 1px solid #666; background: none; color: #0e0e0e;  -webkit-border-radius: 3px; -moz-border-radius: 3px; }
@@ -24,7 +24,7 @@
 #message.loading{ background: none url('/images/chat/indicator.white.gif') no-repeat 306px center; }
 #nick.loading{ background: none url('/images/chat/indicator.white.gif') no-repeat 220px center; }
 
-#chat_overlay{ margin: 10px; border: 1px solid #222; background: no-repeat bottom center url(/images/chat/chat_bg.jpg); -webkit-border-radius: 3px; -moz-border-radius: 3px; height: 320px; width: 420px; }
+#chat_overlay{ margin: 10px; border: 1px solid #222; background: no-repeat bottom center url(/images/chat/chat_bg.jpg); -webkit-border-radius: 3px; -moz-border-radius: 3px; height: 320px; width: 425px; }
 	#chat_overlay p{ font-size: .85em; color: #999; padding: 120px 20px 10px; }
 	#chat_overlay form{ padding: 0; }
 	#chat_overlay p#nick_errors{ clear: both; padding: 20px; color: #D14414; font-weight: bold; }
