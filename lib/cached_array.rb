@@ -19,7 +19,8 @@ class CachedArray
   
   def delete(data)
     @data = @data - [data]
-write  end
+  write
+end
   
   def to_a
     @data.dup
