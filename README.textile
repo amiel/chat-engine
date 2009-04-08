@@ -4,7 +4,7 @@ Chat Engine is a lightweight rails engine that heavily uses jQuery and memcached
 
 h2. Status
 
-
+Chat Engine has just been ported to rails 2.3, and its original design striped.
 
 h2. Features
 
@@ -17,9 +17,24 @@ h2. Features
 
 h2. Usage
 
-Be sure to add the chat.js javascript
-Also requires jquery.
+# install chat-engine
 
+	./script/plugin install git://github.com/amiel/chat-engine.git
+
+# copy assets
+
+	rake chat:sync
+	
+# include assets, don't forget jquery
+
+	<%= stylesheet_link_tag 'chat' %>
+	<%= javascript_include_tag 'jquery-x.x.x.js', 'auto_scroll', 'chat' %>
+
+# use the chat_overlay partial
+	
+	<%= render :partial => 'chats/chat_overlay' %>
+
+# thats it! it will work with memory_store, but is not persistent across mongrels. User mem_cached_store for best results.
 
 h2. History
 
