@@ -17,24 +17,26 @@ h2. Features
 
 h2. Usage
 
-* install chat-engine
-	<pre><code>
-		./script/plugin install git://github.com/amiel/chat-engine.git
-	</code></pre>
-* copy assets
-	<pre><code>
-		rake chat:sync
-	</code></pre>
-* include assets, don't forget jquery
-	<pre><code>
-		<%= stylesheet_link_tag 'chat' %>
-		<%= javascript_include_tag 'jquery-x.x.x.js', 'auto_scroll', 'chat' %>
-	</code></pre>
-* use the chat_overlay partial
-	<pre><code>
-		<%= render :partial => 'chats/chat_overlay' %>
-	</code></pre>
-* thats it! it will work with memory_store, but is not persistent across mongrels. User mem_cached_store for best results.
+install chat-engine
+  <pre><code>
+  	./script/plugin install git://github.com/amiel/chat-engine.git
+  </code></pre>
+copy assets
+  <pre><code>
+  	rake chat:sync
+  </code></pre>
+include assets, don't forget jquery
+  <pre><code>
+  	<%= stylesheet_link_tag 'chat' %>
+  	<%= javascript_include_tag 'jquery-x.x.x.js', 'auto_scroll', 'chat' %>
+  </code></pre>
+use the chat_overlay partial
+  <pre><code>
+  	<%= render :partial => 'chats/chat_overlay' %>
+  </code></pre>
+thats it! it will work with memory_store, but is not persistent across mongrels. User mem_cached_store for best results.
+
+For an example, checkout "http://github.com/amiel/chat-engine-example":http://github.com/amiel/chat-engine-example
 
 h2. History
 
