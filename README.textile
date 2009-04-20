@@ -36,7 +36,7 @@ use the chat_overlay partial
   </code></pre>
 thats it! it will work with memory_store, but is not persistent across mongrels. User mem_cached_store for best results.
 
-For an example, checkout "http://github.com/amiel/chat-engine-example":http://github.com/amiel/chat-engine-example
+For an example, check out "http://github.com/amiel/chat-engine-example":http://github.com/amiel/chat-engine-example
 
 h2. History
 
